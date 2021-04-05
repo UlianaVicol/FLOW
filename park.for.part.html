@@ -1,0 +1,30 @@
+<script>
+    const PARKING_PLACES = 7
+    let freePlace = 3
+
+    let decor = ""
+    for (let x = 1 ; x <= PARKING_PLACES * 5; x++ ) {
+        decor += "#"
+    }
+    console.log(decor)
+
+    let places = ""
+    for (let x = 1; x <= PARKING_PLACES; x++) {
+        if(x == 3){
+            places += "|   |"
+        } else {
+            places += "| X |"
+        }
+    }
+    console.log(places)
+
+    decor = ""
+    for (let x = 1; x <= PARKING_PLACES * 5; x++) {
+        decor += "#"
+    }
+    console.log(decor)
+
+</script>
+<!-- ce inseamna const si de ce numele variabilei declarate prin acest prefix difera ca sintaxa de celelalte variabile?
+    Spre deosebire de variabile, valoarea unei constante nu poate fi schimbata si nu poate fi redeclarata, valoarea lor ramane aceeasi, fixa.
+    posibil sa revin cu o corectie la intrebarile date e luni nu gindesc limpede :)) -->
